@@ -39,9 +39,8 @@ box.forEach((boxes)=>{
             msg.innerHTML = `Game was draw ! Play Again`;
             newGame.style.display = "block";
        }
-       
     })
-})
+});
 
 function checkWinner(){
     for(let pattern of winPattern){
@@ -65,7 +64,6 @@ function checkWinner(){
 
 function ShowWinner(winner){
     msg.innerText = `Congratualtion winner is '${winner}'`;
-
 }
 
 newGame.addEventListener("click",()=>{
